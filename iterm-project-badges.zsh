@@ -82,13 +82,16 @@ _ipb_auto_color() {
   printf '%d,%d,%d' "$r" "$g" "$b"
 }
 
-# Walk up from $PWD looking for a .git entry (dir or file, so plain repos,
-# worktrees and submodules all work). Prints the repo folder name.
+# Walk up from $PWD looking for a project: a .git entry (dir or file, so
+# plain repos, worktrees and submodules all work), or a folder explicitly
+# listed in PROJECT_NAMES/PROJECT_COLORS (lets non-git folders be projects).
+# Prints the project folder name.
 _ipb_find_repo() {
-  local dir="$PWD"
+  local dir="$PWD" name
   while [[ "$dir" != "/" && -n "$dir" ]]; do
-    if [[ -e "$dir/.git" ]]; then
-      printf '%s' "${dir##*/}"
+    name="${dir##*/}"
+    if [[ -e "$dir/.git" || -n "${PROJECT_NAMES[$name]}${PROJECT_COLORS[$name]}" ]]; then
+      printf '%s' "$name"
       return 0
     fi
     dir="${dir%/*}"

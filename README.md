@@ -49,6 +49,8 @@ IPB_SET_TAB_COLOR=1
 IPB_SET_TITLE=1
 ```
 
+Folders listed in `PROJECT_NAMES` or `PROJECT_COLORS` are treated as projects even if they're not git repositories — handy for scratch folders or grouped workspaces.
+
 Badge size, position, and opacity are controlled by iTerm2 itself: **Settings → Profiles → Session → Edit badge appearance…** (font, position, max width/height).
 
 ## How it works
