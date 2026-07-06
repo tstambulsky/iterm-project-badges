@@ -2,7 +2,7 @@
 
 Automatic per-project **badges**, **tab colors**, and **window titles** for iTerm2.
 
-`cd` into any git repository and iTerm2 instantly shows the project name as a big badge in the corner, colors the tab with a per-project color, and sets the window title. Leave the repo and everything resets. Zero configuration required.
+Six terminal tabs open, three of them running AI agents, and no idea which one is working on what? This fixes that: `cd` into any git repository and iTerm2 instantly shows the project name as a big badge in the corner, colors the tab with a per-project color, and sets the window title. Leave the repo and everything resets. Zero configuration required.
 
 ![Two iTerm2 panes with per-project badges and tab colors](docs/screenshot.png)
 
