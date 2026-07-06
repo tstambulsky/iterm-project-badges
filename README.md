@@ -4,9 +4,7 @@ Automatic per-project **badges**, **tab colors**, and **window titles** for iTer
 
 `cd` into any git repository and iTerm2 instantly shows the project name as a big badge in the corner, colors the tab with a per-project color, and sets the window title. Leave the repo and everything resets. Zero configuration required.
 
-<!-- TODO: add a screenshot at docs/screenshot.png and uncomment:
-![screenshot](docs/screenshot.png)
--->
+![Two iTerm2 panes with per-project badges and tab colors](docs/screenshot.png)
 
 ## Install
 
